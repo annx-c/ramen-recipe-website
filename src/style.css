@@ -472,6 +472,15 @@ footer span,
     padding-left: 35px;
   }
 
+  .button {
+    gap: 6px;
+  }
+
+  .recipe-button , .more-information {
+    padding: 10px 5px;
+    font-size: 12px;
+  }
+
   .type-recipe {
     flex-direction: column;
   }
