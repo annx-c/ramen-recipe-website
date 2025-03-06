@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.display-recipe {
+  display: none;
+}
+
 html,
 body {
   overflow-x: hidden;
@@ -195,7 +199,7 @@ a {
 
 .recipe-button,
 .more-information {
-  padding: 10px 20px;
+  padding: 10px 15px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -231,10 +235,19 @@ a {
 }
 
 .recipe-items {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+
   background-color: white;
   border-radius: 15px;
   margin: 20px 20px 45px;
   padding: 25px 20px;
+}
+
+.recipe-items.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .recipe-items h3 {
@@ -472,7 +485,8 @@ footer span,
     padding-left: 35px;
   }
 
-  .recipe-button , .more-information {
+  .recipe-button,
+  .more-information {
     padding: 10px 5px;
     font-size: 12px;
   }
