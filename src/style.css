@@ -358,7 +358,7 @@ footer span,
   color: #ff8400;
 }
 
-/*Adaptaciona varias pantallas - */
+/*Adaptaciona varias pantallas - Adapt multiple screens*/
 
 @media (max-width: 1200x) {
   .type-ramen {
